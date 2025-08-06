@@ -140,12 +140,12 @@ exports.verificarCorreo = async (req, res) => {
 
         // Redirección al login con mensaje
         const mensaje = encodeURIComponent('¡Correo verificado exitosamente!. Ahora puedes iniciar sesión.');
-        res.redirect(`/indexPsicologia.html?mensaje=${mensaje}`);
+        res.redirect(`/index.html?mensaje=${mensaje}`);
         
     } catch (error) {
         console.error('Error al verificar correo:', error.message);
 
         const mensaje = encodeURIComponent(error.message || 'Token inválido o expirado');
-        res.redirect(`/indexPsicologia.html?mensaje=${mensaje}&tipo=error`);
+        res.redirect(`/index.html?mensaje=${mensaje}&tipo=error`);
     }
 };

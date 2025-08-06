@@ -106,7 +106,7 @@ export const configurarInicioSesion = () => {
                      botonSesion.removeAttribute("href");                                       
                      
                     setTimeout(() => {
-                        window.location.href= 'indexPsicologia.html';
+                        window.location.href= 'index.html';
                     }, 2000);
                   
                  }else{
@@ -224,7 +224,7 @@ export const configurarRestablecimientoClave = () => {
                 if (response.ok) {
                     mostrarMensaje('¡Contraseña restablecida correctamente!.','exito');
                     setTimeout(() => {
-                        window.location.href = 'indexPsicologia.html';
+                        window.location.href = 'index.html';
                     },2000);
                 } else {
                     mostrarMensaje(data.message || '¡Error al restablecer la contraseña!.','error');
@@ -260,7 +260,7 @@ export const configurarCierreSesionAutomatico = () => {
                 mostrarMensaje("¡Sesión expirada. Inicia sesión nuevamente!.","error");
             
                 setTimeout(() =>{
-                    window.location.href = "indexPsicologia.html"; //redigir a la pagina de inicio
+                    window.location.href = "index.html"; //redigir a la pagina de inicio
                 },2000);
     
         
@@ -268,13 +268,13 @@ export const configurarCierreSesionAutomatico = () => {
           
         } else {
             localStorage.removeItem("token");
-            window.location.href = "indexPsicologia.html";
+            window.location.href = "index.html";
           
         }
 
     } catch (error) {
         console.log("Error al decodificar token: ", error);
         localStorage.removeItem("token");
-        window.location.href = "indexPsicologia.html";
+        window.location.href = "index.html";
     }
 };
