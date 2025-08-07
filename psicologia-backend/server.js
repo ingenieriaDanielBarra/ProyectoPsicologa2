@@ -15,6 +15,7 @@ const path = require('path');
 const app = express();
 // Crear un servidor HTTP
 const server = http.createServer(app);//crear archivo http
+
 // Configuración de Socket.IO
 const io = new Server(server, {
     cors: {
@@ -46,7 +47,8 @@ app.use(
           "'self'",
           'ws://localhost:3000',         // WebSocket local
           'wss://*',                     // WebSocket seguro si vas a producción
-          'https://cdn.jsdelivr.net'
+          'https://cdn.jsdelivr.net',
+          'https://proyecto-psicologa2-baki.vercel.app'
         ],
         objectSrc: ["'none'"],
         upgradeInsecureRequests: [],
@@ -75,7 +77,8 @@ const usuarioRoutes = require('./routes/usuarioRoutes');
 // Configuración de CORS
 const allowedOrigins = [
       'http://localhost:3000',
-      'https://wfbtg48m-5500.brs.devtunnels.ms'
+      'https://wfbtg48m-5500.brs.devtunnels.ms',
+      'https://proyecto-psicologa2-baki.vercel.app',
 ];
 
 app.use(cors(
@@ -146,7 +149,7 @@ process.on('SIGINT',async () =>{
 
 
 // Inicio del servidor
-const PORT =3000;
+const PORT = process.env.PORT || 3000;
 server.listen(PORT,() => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 
