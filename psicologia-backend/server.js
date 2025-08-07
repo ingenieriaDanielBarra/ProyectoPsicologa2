@@ -19,7 +19,11 @@ const server = http.createServer(app);//crear archivo http
 // Configuración de Socket.IO
 const io = new Server(server, {
     cors: {
-        origin: ['http://localhost:3000', 'https://wfbtg48m-5500.brs.devtunnels.ms'],
+        origin: [
+            //'http://localhost:3000', 
+            //'https://wfbtg48m-5500.brs.devtunnels.ms',
+            'https://proyectopsicologa2.onrender.com',
+            'https://proyecto-psicologa2-baki.vercel.app'],
         methods: ['GET', 'POST'],
         credentials: true
     }
@@ -45,9 +49,10 @@ app.use(
         imgSrc: ["'self'", 'data:', 'https://*'],
         connectSrc: [
           "'self'",
-          'ws://localhost:3000',         // WebSocket local
+          //'ws://localhost:3000',         // WebSocket local
           'wss://*',                     // WebSocket seguro si vas a producción
           'https://cdn.jsdelivr.net',
+          'https://proyectopsicologa2.onrender.com',
           'https://proyecto-psicologa2-baki.vercel.app'
         ],
         objectSrc: ["'none'"],
@@ -76,9 +81,10 @@ const usuarioRoutes = require('./routes/usuarioRoutes');
 
 // Configuración de CORS
 const allowedOrigins = [
-      'http://localhost:3000',
-      'https://wfbtg48m-5500.brs.devtunnels.ms',
+      //'http://localhost:3000',
+      //'https://wfbtg48m-5500.brs.devtunnels.ms',
       'https://proyecto-psicologa2-baki.vercel.app',
+      'https://proyectopsicologa2.onrender.com'
 ];
 
 app.use(cors(
@@ -90,29 +96,29 @@ app.use(cors(
             callback(new Error('No permitido por CORS'));
         }
     },
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     credentials: true
 }
 ));
 
 
 // Configurar la carpeta de archivos estáticos
-app.use(express.static(path.join(__dirname,'..', 'psicologia-frontend', 'public'), {
-    setHeaders: (res, filePath) => {
-        const ext = path.extname(filePath);
-        const mimeTypes = {
-            '.css': 'text/css',
-            '.js': 'application/javascript',
-            '.png': 'image/png',
-            '.jpg': 'image/jpeg',
-            '.jpeg': 'image/jpeg',
-            '.svg': 'image/svg+xml',
-        };
-        if (mimeTypes[ext]) {
-            res.setHeader('Content-Type', mimeTypes[ext]);
-        }
-    }
-}));
+// app.use(express.static(path.join(__dirname,'..', 'psicologia-frontend', 'public'), {
+//     setHeaders: (res, filePath) => {
+//         const ext = path.extname(filePath);
+//         const mimeTypes = {
+//             '.css': 'text/css',
+//             '.js': 'application/javascript',
+//             '.png': 'image/png',
+//             '.jpg': 'image/jpeg',
+//             '.jpeg': 'image/jpeg',
+//             '.svg': 'image/svg+xml',
+//         };
+//         if (mimeTypes[ext]) {
+//             res.setHeader('Content-Type', mimeTypes[ext]);
+//         }
+//     }
+// }));
 
 
 // Conexión a la base de datos
@@ -151,6 +157,6 @@ process.on('SIGINT',async () =>{
 // Inicio del servidor
 const PORT = process.env.PORT || 3000;
 server.listen(PORT,() => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
-
+    //console.log(`Servidor corriendo en http://localhost:${PORT}`);
+    console.log(`Servidor corriendo en producción en el puerto ${PORT}`);
 });
