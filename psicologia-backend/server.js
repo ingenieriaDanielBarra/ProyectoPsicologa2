@@ -153,6 +153,9 @@ process.on('SIGINT',async () =>{
     process.exit(0);
 });
 
+app.get('/', (req, res) => {
+  res.send('Servidor backend de Psicóloga funcionando correctamente.');
+});
 
 // Inicio del servidor
 const PORT = process.env.PORT || 3000;
