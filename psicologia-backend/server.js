@@ -102,23 +102,23 @@ app.use(cors(
 ));
 
 
-// Configurar la carpeta de archivos estáticos
-// app.use(express.static(path.join(__dirname,'..', 'psicologia-frontend', 'public'), {
-//     setHeaders: (res, filePath) => {
-//         const ext = path.extname(filePath);
-//         const mimeTypes = {
-//             '.css': 'text/css',
-//             '.js': 'application/javascript',
-//             '.png': 'image/png',
-//             '.jpg': 'image/jpeg',
-//             '.jpeg': 'image/jpeg',
-//             '.svg': 'image/svg+xml',
-//         };
-//         if (mimeTypes[ext]) {
-//             res.setHeader('Content-Type', mimeTypes[ext]);
-//         }
-//     }
-// }));
+//Configurar la carpeta de archivos estáticos
+app.use(express.static(path.join(__dirname,'..', 'psicologia-frontend', 'public'), {
+    setHeaders: (res, filePath) => {
+        const ext = path.extname(filePath);
+        const mimeTypes = {
+            '.css': 'text/css',
+            '.js': 'application/javascript',
+            '.png': 'image/png',
+            '.jpg': 'image/jpeg',
+            '.jpeg': 'image/jpeg',
+            '.svg': 'image/svg+xml',
+        };
+        if (mimeTypes[ext]) {
+            res.setHeader('Content-Type', mimeTypes[ext]);
+        }
+    }
+}));
 
 
 // Conexión a la base de datos
