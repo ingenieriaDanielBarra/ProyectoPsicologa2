@@ -23,7 +23,7 @@ const io = new Server(server, {
             //'http://localhost:3000', 
             //'https://wfbtg48m-5500.brs.devtunnels.ms',
             'https://proyectopsicologa2.onrender.com',
-            'https://proyecto-psicologa2-baki.vercel.app'],
+            'https://www.pselizabethbarra.cl'],
         methods: ['GET', 'POST'],
         credentials: true
     }
@@ -53,7 +53,7 @@ app.use(
           'wss://*',                     // WebSocket seguro si vas a producción
           'https://cdn.jsdelivr.net',
           'https://proyectopsicologa2.onrender.com',
-          'https://proyecto-psicologa2-baki.vercel.app'
+          'https://www.pselizabethbarra.cl'
         ],
         objectSrc: ["'none'"],
         upgradeInsecureRequests: [],
@@ -83,7 +83,7 @@ const usuarioRoutes = require('./routes/usuarioRoutes');
 const allowedOrigins = [
       //'http://localhost:3000',
       //'https://wfbtg48m-5500.brs.devtunnels.ms',
-      'https://proyecto-psicologa2-baki.vercel.app',
+      'https://www.pselizabethbarra.cl',
       'https://proyectopsicologa2.onrender.com'
 ];
 
