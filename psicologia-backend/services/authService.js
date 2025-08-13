@@ -28,7 +28,7 @@ exports.autenticarUsuario = async (correo, contraseña) => {
 
     //generar el token JWT
     const token = jwt.sign({email: usuario.correo, role: usuario.role, nombre: usuario.nombre, apellido: usuario.apellido},
-                   process.env.JWT_SECRET || 'secret', { expiresIn: '1m' }
+                   process.env.JWT_SECRET || 'secret', { expiresIn: '15m' }
     
     );
     return token;
