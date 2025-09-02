@@ -19,7 +19,7 @@ exports.enviarCorreoReserva = async ({nombre, apellido, edad, telefono, email, s
 
     const mailOptions = {
         from: process.env.EMAIL_USER,
-        to: 'ingenieria.danielbarra@gmail.com',
+        to: 'Ebarraortega@gmail.com',
         subject: 'Nueva reserva de cita',
         text: `
          Se ha recibido una nueva reserva:
