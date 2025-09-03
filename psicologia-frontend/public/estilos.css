@@ -777,13 +777,13 @@ section {
 
 .comentarios {
     font-family: Arial, sans-serif;
-    width: 50%; /* Ajusta el ancho al 50% del contenedor */
-    margin: auto;
+    /* width: 50%;  */
+    /* margin: auto; */
     margin-top: 50px;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e0dded;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 .comentarios h1{
     font-size: 20px;
@@ -899,7 +899,8 @@ textarea{
 
 /* background: linear-gradient(to right,  #8a4f91, #aa86c9); */
 footer {
-    background: linear-gradient(to right,#daa1e9,#d8b4e2);
+    /* background: linear-gradient(to right,#e0dded,#e0dded); */
+    background-color: #e0dded;
     color: white;
     padding: 20px 10px;
     text-align: center;
