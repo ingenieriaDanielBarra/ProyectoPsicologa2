@@ -18,11 +18,11 @@ body {
     box-sizing: border-box;
 }
 #cabecera{
-    background: linear-gradient(to right,#f4edf9,#efe8f5); 
-    padding: 10px 20px;
+    background: linear-gradient(to right,#f4edf9,#f4edf9); 
+    padding: 10px 40px;
     top: 0;
     z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  */
 }
 .navbar{
     display: flex;
@@ -50,8 +50,8 @@ body {
 }
 .navbar .menu li a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
-    /* color: #fff; */
-     color: #564b6b;
+    color: #786f89; 
+    
 }
 nav ul {
 
@@ -423,13 +423,13 @@ section {
 }
 
 #sobre-mi{
-    background: linear-gradient(to right,  #aae7c3, #dbdfdc);
+    background: linear-gradient(to right,  #d6f1f2, #d6f1f2);
     padding: 50px 20px;
     text-align: justify;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* border-radius: 15px; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
     margin: 20px auto;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     /* padding: 4rem 1rem;
     background: #f9f9fc; */
 }
@@ -513,13 +513,13 @@ section {
 
 /* Estilos para la seccion de honorarios */
 #honorarios{
-    background: linear-gradient(to bottom, #f9f9f9, #e6e6e6); /* Fondo degradado */
+    background: linear-gradient(to bottom, #fcfcfc, #fcfcfc); /* Fondo degradado */
     padding: 50px 20px;
     text-align: justify;
     border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  */
     margin: 20px auto;
-    max-width: 800px;
+    /* max-width: 800px; */
 
 } 
 #honorarios h1{
@@ -631,13 +631,13 @@ section {
 
 /* Estilos para la seccion de la consulta */
 #consulta{
-    background: linear-gradient(to bottom, #f9f9f9, #e6e6e6); /* Fondo degradado */
+    background: linear-gradient(to bottom, #f9f8f2, #f9f8f2);
     padding: 50px 20px;
     text-align: justify;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    /* border-radius: 15px; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
     margin: 20px auto;
-    max-width: 800px; /* Ancho máximo */
+    /* max-width: 800px; */
 }
 #consulta h1{
     font-family: calibri light;
@@ -674,7 +674,7 @@ section {
     border-radius: 5px;
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: #f9f9f9;
+    background-color: #e0dded;
   }
 .comentario:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
