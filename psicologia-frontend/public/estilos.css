@@ -438,7 +438,7 @@ section {
 #sobre-mi h1{
     /* font-family: calibri light; */
     font-family: 'Nunito', sans-serif;
-    color:#666;
+    color:#564b6b;
     text-align: center;
     font-size: 1.9rem;
     margin-bottom: 20px;
@@ -458,7 +458,7 @@ section {
 }
 .biografia p{
     font-family: 'Lato', sans-serif;
-    color: #666
+    color: #695e84;
 }
 .foto{
     flex: 0 0 300px; /* Ancho fijo */
@@ -528,14 +528,14 @@ section {
 #honorarios h1{
     font-family: 'Nunito', sans-serif;
     font-size: 2.1rem;
-    color: #666;
+    color: #564b6b;
     margin-bottom: 10px;
     text-align: center;
 }
 .descripcion-honorarios{
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
-    color: #666;
+    color: #695e84;
     margin-bottom: 30px;
 }  
 
@@ -645,14 +645,14 @@ section {
 #consulta h1{
     font-family: 'Nunito', sans-serif;
     font-size: 2.1rem;
-    color: #666;
+    color: #564b6b;
     margin-bottom: 10px;
     text-align: center;
 }
 .consulta-descripcion{
     font-family: 'Lato', sans-serif;
     font-size: 1.1rem;
-    color: #666;
+    color: #695e84;
     margin-bottom: 30px;
 }
 .swiper {
@@ -793,7 +793,7 @@ section {
     font-family: 'Nunito', sans-serif;
     margin-bottom: 20px;
     text-align: center;
-    color: #cea2d1; /* Un color más elegante */
+    color: #564b6b; /* Un color más elegante */
 }
 .top-linea{
     width: 100%;
