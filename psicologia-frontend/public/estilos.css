@@ -904,7 +904,7 @@ textarea{
 footer {
     /* background: linear-gradient(to right,#e0dded,#e0dded); */
     background-color: #e0dded;
-    color: white;
+    color: #564b6b;
     padding: 20px 10px;
     text-align: center;
     position: relative;
@@ -918,7 +918,7 @@ footer .top-line {
 }
 
 footer .info {
-    font-family: 'Arial', sans-serif;
+    font-family: 'lato', sans-serif;
     font-size: 1rem;
     margin-bottom: 20px;
 }
