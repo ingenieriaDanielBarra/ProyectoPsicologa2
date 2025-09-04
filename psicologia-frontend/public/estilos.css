@@ -516,9 +516,9 @@ section {
     background: linear-gradient(to bottom, #fcfcfc, #fcfcfc); /* Fondo degradado */
     padding: 50px 20px;
     text-align: justify;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  */
-    margin: 20px auto;
+    /* margin: 20px auto; */
     /* max-width: 800px; */
 
 } 
@@ -636,7 +636,7 @@ section {
     text-align: justify;
     /* border-radius: 15px; */
     /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
-    margin: 20px auto;
+    /* margin: 20px auto; */
     /* max-width: 800px; */
 }
 #consulta h1{
@@ -779,7 +779,7 @@ section {
     font-family: Arial, sans-serif;
     /* width: 50%;  */
     /* margin: auto; */
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 20px;
     background-color: #e0dded;
     /* border-radius: 10px; */
