@@ -404,8 +404,8 @@ nav ul {
 
 /* Estilos para las secciones */
 section {
-    padding: 20px;
-    margin: 20px 0;
+    /* padding: 20px;
+    margin: 20px 0; */
 }
 #inicio {
     background-color: #F8F4F8;
@@ -905,12 +905,12 @@ footer {
     padding: 20px 10px;
     text-align: center;
     position: relative;
-    border-top: 5px solid white; /* Línea superior */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    /* border-top: 5px solid white;  */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
 }
 footer .top-line {
-    height: 5px;
-    background: white;
+    height: 2px;
+    background: #7d769b;
     margin-bottom: 20px;
 }
 
