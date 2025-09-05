@@ -146,7 +146,7 @@ export const manejarEnvioComentario = () => {
         //creamos al autor
         const autorDiv = document.createElement('div');
         autorDiv.classList.add('comentario-autor');
-        autorDiv.textContent = `${nombreUsuario} ${apellidoUsuario}`;
+        autorDiv.textContent = `${nombreUsuario}`;
 
         //creamos el texto 
         const textoDiv = document.createElement('div');
