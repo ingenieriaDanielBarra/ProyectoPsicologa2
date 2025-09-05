@@ -810,7 +810,7 @@ textarea{
 #enviar-comentario{
 
     padding: 10px 20px;
-    background-color:#d8b4e2;
+    background-color:#564b6b;
     color: white;
     border: none;
     cursor: pointer;
@@ -832,6 +832,7 @@ textarea{
 }
 
 .icono-responder{
+    background: #564b6b;
     margin-top: 20px;
     display: block;
     font-family: serif;
@@ -841,7 +842,7 @@ textarea{
 
 }
 .icono-eliminar{
-
+    background: #564b6b;
     margin-top: 20px;
     display: block;
     font-family: serif;
