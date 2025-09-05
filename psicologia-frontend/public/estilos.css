@@ -200,9 +200,9 @@ nav ul {
     transform: translateY(0);
 }
 #formulario-reestablecerClave h1{
-    font-family: 'Arial', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 24px;
-    color: #d8b4e2;
+    color: #564b6b;
     margin-bottom: 20px;
 }
 #formRestablecerClave{
@@ -210,7 +210,7 @@ nav ul {
     font-family: fantasy;
 }
 #formRestablecerClave button{
-    background: linear-gradient(to right,#daa1e9,#d8b4e2);
+    background: #564b6b;
     color: white;
     font-weight: bold;
     border: none;
@@ -229,7 +229,7 @@ nav ul {
     width: 100%;
     padding: 12px;
     font-size: 16px;
-    border: 1px solid #d8b4e2;
+    border: 1px solid #e0dded;
     border-radius: 5px;
     background-color: #f4f4f4;
     transition: border 0.3s, box-shadow 0.3s;
