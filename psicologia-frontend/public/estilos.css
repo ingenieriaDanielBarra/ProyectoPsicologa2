@@ -716,6 +716,7 @@ section {
 
 }
 .comentario-acciones a {
+    font-family: 'Nunito', sans-serif;
     color: #564b6b; /* un color vistoso, por ejemplo */
     cursor: pointer;
     text-decoration: none;
