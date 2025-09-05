@@ -131,9 +131,9 @@ nav ul {
     transform: translateY(0);
 }
 #formulario-recuperarClave h1{
-    font-family: 'Arial', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 24px;
-    color: #d8b4e2;
+    color: #564b6b;
     margin-bottom: 20px;
 }
 #formRecuperarClave{
@@ -141,7 +141,7 @@ nav ul {
     font-family: fantasy;
 }
 #formRecuperarClave button{
-    background: linear-gradient(to right,#daa1e9,#d8b4e2);
+    background: #564b6b;
     color: white;
     font-weight: bold;
     border: none;
@@ -161,7 +161,7 @@ nav ul {
     width: 100%;
     padding: 12px;
     font-size: 16px;
-    border: 1px solid #d8b4e2;
+    border: 1px solid #e0dded;
     border-radius: 5px;
     background-color: #f4f4f4;
     transition: border 0.3s, box-shadow 0.3s;
@@ -175,7 +175,7 @@ nav ul {
 }
 #formulario-recuperarClave p{
     font-size: 14px;
-    color: #a55fc7;
+    color: #564b6b;
     font-family: 'Arial', sans-serif;
     margin-top: 20px;
 }
@@ -252,7 +252,7 @@ nav ul {
     gap: 15px;
 }
 #formcreacionUsuario button{
-    background: linear-gradient(to right,#daa1e9,#d8b4e2);
+    background: #564b6b;
     color: white;
     font-weight: bold;
     border: none;
@@ -270,16 +270,16 @@ nav ul {
     width: 100%;
     padding: 12px;
     font-size: 16px;
-    border: 1px solid #d8b4e2;
+    border: 1px solid #e0dded;
     border-radius: 5px;
     background-color: #f4f4f4;
     transition: border 0.3s;
 }
 #formulario-creacionUsuario h1{
 
-    font-family: 'Arial', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 28px;
-    color: #d8b4e2;
+    color: #564b6b;
     margin-bottom: 20px;
 
 }
@@ -310,7 +310,7 @@ nav ul {
     font-family: fantasy;
 }
 #formAcceso button{
-    background: linear-gradient(to right,#daa1e9,#d8b4e2);
+    background: #564b6b;
     color: white;
     font-weight: bold;
     border: none;
@@ -330,7 +330,7 @@ nav ul {
     width: 100%;
     padding: 12px;
     font-size: 16px;
-    border: 1px solid #d8b4e2;
+    border: 1px solid #e0dded;
     border-radius: 5px;
     background-color: #f4f4f4;
     transition: border 0.3s, box-shadow 0.3s;
@@ -343,15 +343,15 @@ nav ul {
     box-shadow: 0px 0px 5px rgba(165, 95, 199, 0.5);
 }
 #formulario-acceso h1{
-    font-family: 'Arial', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 26px;
-    color: #deb3e9;
-    margin-bottom: 20px;
+    color: #564b6b;
+  margin-bottom: 20px;
 
 }
 .alternativas a{
     font-size: 14px;
-    color: #a55fc7;
+    color: #564b6b;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
 }
@@ -1007,8 +1007,9 @@ footer .social-icons a img:hover {
     transform: scale(1);
 }
 #formulario-reserva h1{
+    font-family: 'Nunito', sans-serif;
     font-size: 26px;
-    color: #d8b4e2; /* Un color más elegante */
+    color: #564b6b; /* Un color más elegante */
     margin-bottom: 15px;
     font-weight: bold;
 }
@@ -1056,7 +1057,7 @@ footer .social-icons a img:hover {
 #formReserva select,
 #comentario-consulta {
     background-color: #f2f2f2;
-    border: 2px solid #d8b4e2;
+    border: 2px solid #e0dded;
     border-radius: 8px;
     padding: 10px;
     width: 100%;
@@ -1075,7 +1076,7 @@ footer .social-icons a img:hover {
     outline: none;
 }
 #formReserva .form-group button {
-    background-color: #8a4f91;
+    background-color: #564b6b;
     color: white;
     font-weight: bold;
     border: none;
@@ -1105,7 +1106,7 @@ footer .social-icons a img:hover {
     width: 100px; /* Ajusta el ancho del botón */
     height: 50px; /* Ajusta la altura del botón */
     border-radius: 5px; /* Bordes redondeados */
-    background: linear-gradient(to right,#daa1e9,#d8b4e2); /* Color de fondo */
+    background: #564b6b;
     color: white; /* Color del texto */
     border: none; /* Sin borde */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
@@ -1115,7 +1116,7 @@ footer .social-icons a img:hover {
     margin-top:  -30px; /* Centra el botón */
 }
 #enviar-formulario:hover {
-    background-color: #b085bc; /* Color de fondo al pasar el mouse */
+    background-color: #625c6d; /* Color de fondo al pasar el mouse */
 }
 .err{
     border: 2px solid red !important;
