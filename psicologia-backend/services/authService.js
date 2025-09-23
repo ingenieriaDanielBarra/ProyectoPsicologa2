@@ -64,7 +64,7 @@ exports.enviarCorreoRecuperacion = async (correo, token) => {
             html: `
                 <p>Hola ${usuario.nombre},</p>
                 <p>Haz solicitado recuperar tu contraseña. Haz clic en el siguiente enlace para restablecerla:</p>
-                <a href="${process.env.BACKEND_URL}/restablecer-clave?token=${token}">Restablecer Contraseña</a>
+                <a href="${process.env.FRONTEND_URL}/restablecer-clave?token=${token}">Restablecer Contraseña</a>
                 <p>Si no solicitaste este cambio, ignora este correo.</p>
               `
         };
@@ -137,7 +137,7 @@ exports.enviarCorreoVerificacion = async (correo, token) => {
         html: `
             <p>Hola ${usuario.nombre},</p>
             <p>Gracias por registrarte. Por favor, verifica tu correo haciendo clic en el siguiente enlace:</p>
-            <a href="${process.env.BACKEND_URL}/verificar-correo?token=${token}">Verificar correo</a>
+            <a href="${process.env.FRONTEND_URL}/verificar-correo?token=${token}">Verificar correo</a>
             <p>Si no solicitaste esto, ignora este correo.</p>
           `
     };
