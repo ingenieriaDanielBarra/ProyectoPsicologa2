@@ -22,7 +22,8 @@ const io = new Server(server, {
         origin: [
             //'http://localhost:3000', 
             //'https://wfbtg48m-5500.brs.devtunnels.ms',
-            'https://proyectopsicologa2.onrender.com',
+            //'https://proyectopsicologa2.onrender.com',
+            'https://api.pselizabethbarra.cl',
             'https://www.pselizabethbarra.cl'],
         methods: ['GET', 'POST'],
         credentials: true
@@ -52,7 +53,8 @@ app.use(
           //'ws://localhost:3000',         // WebSocket local
           'wss://*',                     // WebSocket seguro si vas a producción
           'https://cdn.jsdelivr.net',
-          'https://proyectopsicologa2.onrender.com',
+          //'https://proyectopsicologa2.onrender.com',
+          'https://api.pselizabethbarra.cl',
           'https://www.pselizabethbarra.cl'
         ],
         objectSrc: ["'none'"],
@@ -84,7 +86,8 @@ const allowedOrigins = [
       //'http://localhost:3000',
       //'https://wfbtg48m-5500.brs.devtunnels.ms',
       'https://www.pselizabethbarra.cl',
-      'https://proyectopsicologa2.onrender.com'
+      //'https://proyectopsicologa2.onrender.com'
+      'https://api.pselizabethbarra.cl'
 ];
 
 app.use(cors(
