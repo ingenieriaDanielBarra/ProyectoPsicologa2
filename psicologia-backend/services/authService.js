@@ -123,7 +123,13 @@ exports.generarTokenVerificacion = async (correo) => {
 exports.enviarCorreoVerificacion = async (correo, token) => {
     const usuario = await Usuario.findOne({ correo });
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        // service: 'gmail',
+        // auth: {
+        //     user: process.env.EMAIL_USER,
+        //     pass: process.env.EMAIL_PASS
+        host: 'smtp.gmail.com',
+        port: 465, // Puerto seguro para Gmail
+        secure: true, // Usa SSL
         auth: {
             user: process.env.EMAIL_USER,
             pass: process.env.EMAIL_PASS
